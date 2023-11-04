@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/zhyldyzzheenbaeva/IdeaProjects/MavenDemo2/src/test/java">
+        <classes>
+            <class name="maven.demo.login.LoginTest">
+                <methods>
+                    <include name="loginTest1"/>
+                </methods>
+            </class>
+            <class name="maven.demo.otherTesr.DemoTest2">
+                <methods>
+                    <include name="test10"/>
+                </methods>
+            </class>
+            <class name="maven.demo.otherTesr.DemoTest3">
+                <methods>
+                    <include name="testA"/>
+                    <include name="testB"/>
+                    <include name="testC"/>
+                    <include name="testF"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
