@@ -52,5 +52,7 @@ public void test(){
     @AfterGroups (groups = "groups2")
     public void afterGroup(){
         System.out.println("group2");
+
+        
     }
 }
