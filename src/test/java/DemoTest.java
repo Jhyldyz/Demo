@@ -25,6 +25,8 @@ public void test(){
     public void afterTest(){
         System.out.println("after test");
     }
+
+    
     @AfterMethod
     public void test3(){
         System.out.println("after method");
