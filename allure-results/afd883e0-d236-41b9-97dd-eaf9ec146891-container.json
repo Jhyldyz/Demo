@@ -1,0 +1,1 @@
+{"uuid":"afd883e0-d236-41b9-97dd-eaf9ec146891","name":"maven.demo.login.LoginTest","children":["f492f086-ceb3-446a-ba86-ac8668f2e91f"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1699119356070,"stop":1699119356070}],"afters":[],"start":1699119355882,"stop":1699119356092}

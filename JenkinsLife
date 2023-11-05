@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+    parameters {
+        choice(name: 'TEST_TYPE', choices: ['All Test Suite'], description: 'Choose test type')
+    }
+    stages {
+        stage('Build and Run Tests') {
+            steps {
+                script {
+                    def mavenHome = '/usr/share/maven'
+                    def mavenProfile
+                    switch (params.TEST_TYPE) {
+                        case 'Demo':
+                            mavenProfile = 'Demo'
+                            break
+                    }
+                    sh "${mavenHome}/bin/mvn clean test -P ${mavenProfile}"
+                }
+            }
+        }
+        stage('Reports') {
+            steps {
+                script {
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: 'target/allure-results']]
+                    ])
+                }
+            }
+        }
+    }
+}
+
+
+
