@@ -9,6 +9,7 @@ public void test(){
     public void test1(){
         System.out.println("test1");
     }
+    
     @Test(groups = "groups1")
     public void test2(){
         System.out.println("test2");
