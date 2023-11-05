@@ -12,6 +12,7 @@ public class LoginTest extends BaseTest {
     public void loginTest1(){
         System.out.println("this is our login test 1");
 
+        
     }
     @BeforeMethod
     public void beforeMethod(){
