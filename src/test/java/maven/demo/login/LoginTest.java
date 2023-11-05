@@ -11,15 +11,12 @@ public class LoginTest extends BaseTest {
     @Test
     public void loginTest1(){
         System.out.println("this is our login test 1");
-
-        
     }
     @BeforeMethod
     public void beforeMethod(){
         classSettings.classMethod();
         methodSetting = new MethodSetting();
         methodSetting.methodSetting(); //
-
     }
     @BeforeClass
     public void beforeClass(){
