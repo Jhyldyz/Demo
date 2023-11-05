@@ -2,7 +2,6 @@ import org.testng.annotations.*;
 
 public class DemoTest {
 
-
 @BeforeMethod
 public void test(){
     System.out.println("this is before");
